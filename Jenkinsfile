@@ -1,13 +1,9 @@
 pipeline {
     agent any
-    tools {
-        //gradle 'Gradle-7.4'
-        maven 'Maven'
-    }
     stages {
-        stage ('Deploy') {
+        stage ('Build') {
             steps {
-                sh 'mvn package'
+                echo 'hello world'
             }
         }
     }
