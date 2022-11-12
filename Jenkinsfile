@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage ('Deploy') {
             steps {
-                cd '/root/spring-petclinic'
-                sh './mvnw package'
-                sh 'java -jar target/*.jar'
+                sh 'mvn package'
             }
         }
     }
