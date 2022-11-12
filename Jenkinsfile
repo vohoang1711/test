@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                echo 'hello world'
+                sh 'scp -r spring-petclinic root@192.168.56.103:/root'
             }
         }
     }
