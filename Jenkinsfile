@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'scp hello.txt root@192.168.56.103:/root'
+                sh 'scp /root/hello.txt root@192.168.56.103:/root'
             }
         }
     }
