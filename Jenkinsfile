@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'scp /var/lib/jenkins/workspace/Build-jar/target/spring-petclinic-2.7.3.jar root@192.168.56.101:/root'
+                sh 'scp root@192.168.56.101:/var/lib/jenkins/workspace/Build-jar/target/spring-petclinic-2.7.3.jar /root'
                 sh 'java -jar spring-petclinic-2.7.3.jar'
             }
         }
